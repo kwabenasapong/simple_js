@@ -83,6 +83,18 @@ You mentioned several Node.js capabilities and tools, including Express, Babel, 
    }
    ```
 
+# The command your frontend framework provides for compiling your code in vercel
+```bash
+npm run build
+```
+
+# summary for installing in vercel
+```bash
+npm install express @babel/core @babel/cli @babel/preset-env @babel/node nodemon
+echo '{ "presets": ["@babel/preset-env"] }' > .babelrc
+```
+
+
 Now, your project is set up with a basic structure and the necessary tools. You can start writing your Node.js code in `src/index.js` and run it with the command `npm start` to see the effects of your changes in real time, thanks to Nodemon.
 
 If you need further assistance setting up more specific parts of your project or understanding how these tools work together, feel free to ask!
