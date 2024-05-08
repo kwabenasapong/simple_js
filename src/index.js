@@ -18,4 +18,4 @@ app.listen(PORT, () => {
 });
 
 //config port to deploy on vercel
-export default app;
+//export default app;
