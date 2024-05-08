@@ -6,7 +6,7 @@ import express from 'express'
 const app = express();
 
 // Define a route for the home page
-app.get("/", (req, res) => {
+app.get("/", (_, res) => {
   res.send("<h1>Hello World!</h1><p>Your Node.js environment is set up!</p>");
 });
 
@@ -18,4 +18,4 @@ app.listen(PORT, () => {
 });
 
 //config port to deploy on vercel
-//export default app;
+export default app;
