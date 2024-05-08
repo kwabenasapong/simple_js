@@ -1,0 +1,15 @@
+{
+  "description": "A simple example of a vercel.json file to configure for vercel deployment",
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/src/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}

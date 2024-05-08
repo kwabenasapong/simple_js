@@ -1,6 +1,6 @@
 // Import the Express module
-//const express = require("express");
-import express from 'express'
+const express = require("express");
+//import express from 'express'
 
 // Create an Express application
 const app = express();
@@ -16,3 +16,6 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`Node version: ${process.version}`);
 });
+
+//config port to deploy on vercel
+export default app;
